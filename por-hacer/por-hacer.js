@@ -83,6 +83,19 @@ const getListadoFiltro = (completado = true) => {
     //     //metodo abreviado para reemplazar llaves {} y return
     // );
 
+    if (completado.toString() === 'true') {
+        console.log('se vino pal tru :');
+        let nuevoListadoTrue = listadoPorHacer.filter(tarea => {
+            return tarea.completado === completado;
+        })
+    } else {
+        if (completado.toString() === 'false') {
+            let nuevoListadoFalse = listadoPorHacer.filter(tarea => {
+                return tarea.completado === eval.completado
+            })
+        }
+    }
+
     let nuevoListadoFiltro = listadoPorHacer.filter(tareaFiltro =>
         tareaFiltro.completado = completado
     );

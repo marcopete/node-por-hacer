@@ -32,7 +32,7 @@ switch (comando) {
         let listadoFiltro = porHacer.getListadoFiltro(argv.completado);
         console.log('object :', listadoFiltro.length);
         for (let tareaFiltro of listadoFiltro) {
-            console.log('==========Por Hacer=========='.green);
+            console.log('==========Por Hacer (BETA)=========='.green);
             console.log(tareaFiltro.descripcion);
             console.log('Estado :', tareaFiltro.completado);
             console.log('============================='.green);
